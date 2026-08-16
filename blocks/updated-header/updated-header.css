@@ -1,4 +1,6 @@
-
+/* =========================================
+   UPDATED HEADER CONTAINER
+   ========================================= */
 
 .updated-header-container {
     padding: 16px 24px;
@@ -9,14 +11,22 @@
     margin: 0 auto;
 }
 
+
+/* =========================================
+   MAIN HEADER - GLASS EFFECT
+   ========================================= */
+
 .updated-header {
     position: relative;
+
     width: 100%;
+
     box-sizing: border-box;
 
     color: #1e293b;
 
     background: rgba(255, 255, 255, 0.10);
+
     border: 1px solid rgba(255, 255, 255, 0.20);
     border-radius: 20px;
 
@@ -37,13 +47,17 @@
 
 .updated-header > div {
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     min-height: 76px;
+
     width: 100%;
 
     padding: 0 24px;
+
     box-sizing: border-box;
 }
 
@@ -54,16 +68,20 @@
 
 .header-left {
     display: flex;
+
     align-items: center;
 
     min-width: 0;
 }
 
 
-/* Logo */
+/* =========================================
+   LOGO
+   ========================================= */
 
 .header-logo {
     position: relative;
+
     flex-shrink: 0;
 
     width: 50px;
@@ -98,23 +116,32 @@
 }
 
 
-/* Company name */
+/* =========================================
+   COMPANY NAME
+   ========================================= */
 
 .header-company {
     margin-left: 14px;
 
     color: #475569;
+
     font-size: 20px;
+
     font-weight: 700;
+
     letter-spacing: -0.3px;
+
+    line-height: 1.2;
 
     white-space: nowrap;
 
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
 }
 
 .header-company p {
     margin: 0;
+
+    color: inherit;
 }
 
 
@@ -124,6 +151,7 @@
 
 .header-right {
     display: flex;
+
     align-items: center;
 
     gap: 8px;
@@ -132,7 +160,9 @@
 }
 
 
-/* Navigation links */
+/* =========================================
+   NAVIGATION LINKS
+   ========================================= */
 
 .header-link {
     position: relative;
@@ -142,7 +172,10 @@
     color: #475569;
 
     font-size: 15px;
+
     font-weight: 500;
+
+    line-height: 1.2;
 
     border-radius: 10px;
 
@@ -150,23 +183,35 @@
 
     transition:
         color 0.25s ease,
-        background 0.25s ease,
-        transform 0.25s ease;
+        background-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .header-link p {
     margin: 0;
+
+    color: inherit;
 }
 
 
-/* Hover */
+/* =========================================
+   NAVIGATION HOVER
+   ========================================= */
 
-.header-link:hover {
-    color: #ffffff;
+.header-link:not(:last-child):hover {
+    color: #2563eb;
 
-    background: rgba(255, 255, 255, 0.12);
+    background-color: rgba(37, 99, 235, 0.08);
 
     transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+.header-link:not(:last-child):hover p {
+    color: #2563eb;
 }
 
 
@@ -179,16 +224,20 @@
 
     padding: 10px 20px;
 
-    color: #111827;
+    color: #ffffff;
 
-    background: rgba(255, 255, 255, 0.92);
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
 
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(37, 99, 235, 0.30);
+
     border-radius: 10px;
 
     box-shadow:
-        0 4px 15px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
+        0 4px 15px rgba(37, 99, 235, 0.20);
 
     transition:
         background 0.25s ease,
@@ -196,21 +245,35 @@
         box-shadow 0.25s ease;
 }
 
-.header-link:last-child:hover {
-    color: #111827;
+.header-link:last-child p {
+    color: #ffffff;
+}
 
-    background: #ffffff;
+
+/* Login hover */
+
+.header-link:last-child:hover {
+    color: #ffffff;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.20),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
+        0 8px 20px rgba(37, 99, 235, 0.30);
+}
+
+.header-link:last-child:hover p {
+    color: #ffffff;
 }
 
 
 /* =========================================
-   DECORATIVE LIGHT
+   DECORATIVE GLASS LIGHT
    ========================================= */
 
 .updated-header::before {
@@ -224,7 +287,7 @@
     top: -100px;
     left: 20%;
 
-    background: rgba(99, 102, 241, 0.30);
+    background: rgba(99, 102, 241, 0.20);
 
     border-radius: 50%;
 
@@ -244,7 +307,7 @@
     right: 10%;
     bottom: -100px;
 
-    background: rgba(59, 130, 246, 0.25);
+    background: rgba(59, 130, 246, 0.18);
 
     border-radius: 50%;
 
@@ -276,11 +339,13 @@
 
     .header-right {
         gap: 4px;
+
         margin-left: 20px;
     }
 
     .header-link {
         padding: 9px 10px;
+
         font-size: 14px;
     }
 
@@ -314,11 +379,13 @@
 
     .header-company {
         margin-left: 10px;
+
         font-size: 16px;
     }
 
     .header-right {
         gap: 2px;
+
         margin-left: 12px;
     }
 
