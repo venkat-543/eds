@@ -1,4 +1,3 @@
-
 export default async function decorate(block) {
   const row = block.children[0];
 
@@ -8,20 +7,11 @@ export default async function decorate(block) {
   const contact = row.children[3];
   const login = row.children[4];
 
-
-  console.log('Logo:', logo);
-  console.log('Company:', company);
-  console.log('About:', about);
-  console.log('Contact:', contact);
-  console.log('Login:', login);
-
-
   logo.classList.add('header-logo');
   company.classList.add('header-company');
   about.classList.add('header-link');
   contact.classList.add('header-link');
   login.classList.add('header-link');
-
 
   const left = document.createElement('div');
   left.classList.add('header-left');
@@ -31,7 +21,6 @@ export default async function decorate(block) {
 
   left.append(logo, company);
   right.append(about, contact, login);
-
   row.append(left, right);
 
 }
