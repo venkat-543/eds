@@ -12,12 +12,12 @@
 
 :root {
   /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+    --background-color: #f8fafc;
+    --light-color: #f1f5f9;
+    --dark-color: #334155;
+    --text-color: #1e293b;
+    --link-color: #2563eb;
+    --link-hover-color: #1d4ed8;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -73,8 +73,27 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
+    min-height: 100vh;
+
+    color: var(--text-color);
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(186, 230, 253, 0.45),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(221, 214, 254, 0.35),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(224, 242, 254, 0.5),
+            transparent 35%
+        ),
+        #f8fafc;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
