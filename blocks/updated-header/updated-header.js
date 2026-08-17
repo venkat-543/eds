@@ -22,5 +22,4 @@ export default async function decorate(block) {
   left.append(logo, company);
   right.append(about, contact, login);
   row.append(left, right);
-
 }
