@@ -1,0 +1,36 @@
+.hero-banner-block {
+  display: flex;
+  height: 396px;
+  background: #c6d1db;
+}
+
+.bg-image {
+  width: 50%;
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  margin: 0 0 20px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
