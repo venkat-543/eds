@@ -1,0 +1,24 @@
+.related-topics {
+  margin: 3rem 0;
+}
+.related-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.related-topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1.25rem;
+  border: 1px solid #d9dee8;
+  border-radius: .75rem;
+  color: inherit;
+  text-decoration: none;
+}
+.related-topic-card:hover {
+  text-decoration: none;
+}
+.related-topic-card span {
+  line-height: 1.5;
+}
