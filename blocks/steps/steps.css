@@ -1,0 +1,36 @@
+.steps {
+  margin: 2rem 0;
+}
+.steps-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: tutorial-step;
+}
+.steps-list li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 2rem 3.5rem;
+  border-left: 2px solid #d9dee8;
+  counter-increment: tutorial-step;
+}
+.steps-list li::before {
+  content: counter(tutorial-step);
+  position: absolute;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #111827;
+  color: #fff;
+  font-weight: 700;
+}
+.steps-list h3 {
+  margin: 0 0 .35rem;
+}
+.steps-list p {
+  margin: 0;
+  line-height: 1.6;
+}
