@@ -1,0 +1,18 @@
+.accordion {
+  margin: 2rem 0;
+}
+.accordion details {
+  border-top: 1px solid #d9dee8;
+}
+.accordion details:last-child {
+  border-bottom: 1px solid #d9dee8;
+}
+.accordion summary {
+  padding: 1rem 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+.accordion-content {
+  padding: 0 0 1rem;
+  line-height: 1.7;
+}
