@@ -1,0 +1,20 @@
+.checklist {
+  margin: 2rem 0;
+}
+.checklist-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.checklist-list li {
+  position: relative;
+  margin: .65rem 0;
+  padding-left: 1.8rem;
+  line-height: 1.6;
+}
+.checklist-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
