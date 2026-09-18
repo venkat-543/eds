@@ -1,0 +1,20 @@
+.callout {
+  margin: 2rem 0;
+}
+.callout-content {
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid currentColor;
+  border-radius: .5rem;
+  background: #f5f7fb;
+}
+.callout strong {
+  display: block;
+  margin-bottom: .4rem;
+}
+.callout p {
+  margin: 0;
+  line-height: 1.6;
+}
+.callout-warning .callout-content { background: #fff8e6; }
+.callout-tip .callout-content { background: #eefbf3; }
+.callout-important .callout-content { background: #f3efff; }
