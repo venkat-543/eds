@@ -1,0 +1,42 @@
+.code-example {
+  margin: 2rem 0;
+  overflow: hidden;
+  border: 1px solid #d9dee8;
+  border-radius: .75rem;
+  background: #111827;
+}
+.code-example-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+  background: #1f2937;
+  color: #fff;
+}
+.code-example-language {
+  padding: .25rem .5rem;
+  border-radius: .35rem;
+  background: #374151;
+  font-size: .75rem;
+}
+.code-example-body {
+  position: relative;
+}
+.code-example pre {
+  margin: 0;
+  padding: 1.25rem;
+  overflow-x: auto;
+  color: #f3f4f6;
+  font: .9rem/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.code-example-copy {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  padding: .4rem .7rem;
+  border: 1px solid #4b5563;
+  border-radius: .4rem;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
