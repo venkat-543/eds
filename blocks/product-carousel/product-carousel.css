@@ -1,0 +1,1 @@
+.product-carousel-ready{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,280px);gap:18px;overflow-x:auto;padding:4px 4px 18px;scroll-snap-type:x mandatory}.product-carousel-ready>div{scroll-snap-align:start}
