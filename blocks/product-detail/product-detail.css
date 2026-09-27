@@ -1,0 +1,1 @@
+.product-detail-ready{display:grid;gap:24px}.product-detail-ready img{max-height:420px;object-fit:contain}.product-detail-ready table{width:100%;border-collapse:collapse}.product-detail-ready th,.product-detail-ready td{padding:12px;border-bottom:1px solid #e2e8f0;text-align:left}@media(width>=800px){.product-detail-ready{grid-template-columns:1fr 1fr}}
