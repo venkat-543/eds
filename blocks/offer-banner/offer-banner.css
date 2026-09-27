@@ -1,0 +1,1 @@
+.offer-banner-ready{display:grid;grid-template-columns:1fr;gap:20px;padding:32px;border-radius:22px;background:#0f172a;color:#fff}.offer-banner-ready img{width:100%;max-height:320px;object-fit:cover;border-radius:14px}@media(width>=800px){.offer-banner-ready{grid-template-columns:1fr 1fr;align-items:center}}
