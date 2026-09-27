@@ -1,0 +1,1 @@
+export default function decorate(block) {\n  block.classList.add('product-card-ready');\n}\n
